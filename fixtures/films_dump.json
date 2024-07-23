@@ -1,0 +1,679 @@
+[
+    {
+      "model": "films.film",
+      "pk": 1,
+      "fields": {
+        "title": "The Shawshank Redemption",
+        "description": "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+        "release_date": "1994-01-01",
+        "genres": [
+          1,
+          2,
+          7
+        ],
+        "director": 1,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      } 
+    },
+    {
+      "model": "films.film",
+      "pk": 2,
+      "fields": {
+        "title": "The Godfather",
+        "description": "Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son, Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.",
+        "release_date": "1972-01-01",
+        "genres": [
+          1,
+          2
+        ],
+        "director": 2,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.film",
+      "pk": 3,
+      "fields": {
+        "title": "The Dark Knight",
+        "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "release_date": "2008-01-01",
+        "genres": [
+          2,
+          6
+        ],
+        "director": 5,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.film",
+      "pk": 4,
+      "fields": {
+        "title": "12 Angry Men",
+        "description": "The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.",
+        "release_date": "1957-01-01",
+        "genres": [
+          10
+        ],
+        "director": 3,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.film",
+      "pk": 5,
+      "fields": {
+        "title": "Schindler's List",
+        "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+        "release_date": "1993-01-01",
+        "genres": [
+          7,
+          13
+        ],
+        "director": 4,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.film",
+      "pk": 6,
+      "fields": {
+        "title": "The Lord of the Rings: The Return of the King",
+        "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+        "release_date": "2003-01-01",
+        "genres": [
+          2
+        ],
+        "director": 6,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.film",
+      "pk": 7,
+      "fields": {
+        "title": "Pulp Fiction",
+        "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        "release_date": "1994-01-01",
+        "genres": [
+          3
+        ],
+        "director": 8,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 1,
+      "fields": {
+        "name": "Quentin Tarantino"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 2,
+      "fields": {
+        "name": "Peter Jackson"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 3,
+      "fields": {
+        "name": "Frank Darabont"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 4,
+      "fields": {
+        "name": "Francis Ford Coppola"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 5,
+      "fields": {
+        "name": "Christopher Nolan"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 6,
+      "fields": {
+        "name": "Bob Kane"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 7,
+      "fields": {
+        "name": "Christopher Nolan"
+      }
+    },
+    {
+      "model": "films.director",
+      "pk": 8,
+      "fields": {
+        "name": "Christian Bale"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 1,
+      "fields": {
+        "name": "Fiction"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 2,
+      "fields": {
+        "name": "Novel"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 3,
+      "fields": {
+        "name": "Poetry"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 4,
+      "fields": {
+        "name": "Fantasy"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 5,
+      "fields": {
+        "name": "Sci-Fi"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 6,
+      "fields": {
+        "name": "Detective"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 7,
+      "fields": {
+        "name": "Historical"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 8,
+      "fields": {
+        "name": "Horror"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 9,
+      "fields": {
+        "name": "Romance"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 10,
+      "fields": {
+        "name": "Memoir & Autobiography"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 11,
+      "fields": {
+        "name": "Business"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 12,
+      "fields": {
+        "name": "Children's"
+      }
+    },
+    {
+      "model": "films.genre",
+      "pk": 13,
+      "fields": {
+        "name": "Non-fiction"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 1,
+      "fields": {
+        "text": "A captivating story with stunning visuals. Absolutely loved it!",
+        "rating": 5,
+        "author": 1,
+        "film": 1,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 2,
+      "fields": {
+        "text": "Interesting plot but felt a bit slow at times. Could have been better.",
+        "rating": 5,
+        "author": 2,
+        "film": 1,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 3,
+      "fields": {
+        "text": "Great performances and a compelling story. Worth watching.",
+        "rating": 4,
+        "author": 1,
+        "film": 1,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 4,
+      "fields": {
+        "text": "Not my cup of tea. I found it quite predictable and unoriginal.",
+        "rating": 5,
+        "author": 2,
+        "film": 1,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 5,
+      "fields": {
+        "text": "An absolute masterpiece. Every element came together perfectly!",
+        "rating": 5,
+        "author": 1,
+        "film": 1,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 6,
+      "fields": {
+        "text": "A fantastic film with a brilliant script. Highly recommend!",
+        "rating": 2,
+        "author": 2,
+        "film": 2,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 7,
+      "fields": {
+        "text": "Too many plot holes for my taste. Could have been better executed.",
+        "rating": 2,
+        "author": 1,
+        "film": 2,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 8,
+      "fields": {
+        "text": "The acting was top-notch, but the story felt a bit cliché.",
+        "rating": 1,
+        "author": 2,
+        "film": 2,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 9,
+      "fields": {
+        "text": "A visual feast with an engaging storyline. Definitely worth a watch.",
+        "rating": 1,
+        "author": 1,
+        "film": 2,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 10,
+      "fields": {
+        "text": "Not as good as I expected. The pacing was off.",
+        "rating": 2,
+        "author": 2,
+        "film": 2,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 11,
+      "fields": {
+        "text": "A thrilling experience from start to finish. Highly enjoyable!",
+        "rating": 5,
+        "author": 1,
+        "film": 3,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 12,
+      "fields": {
+        "text": "An interesting concept but it didn't fully deliver on its promise.",
+        "rating": 3,
+        "author": 2,
+        "film": 3,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 13,
+      "fields": {
+        "text": "The cinematography was amazing, but the story was a bit weak.",
+        "rating": 4,
+        "author": 1,
+        "film": 3,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 14,
+      "fields": {
+        "text": "Enjoyable but not memorable. Some aspects were well done, others less so.",
+        "rating": 3,
+        "author": 2,
+        "film": 3,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 15,
+      "fields": {
+        "text": "An incredible film with a lot of depth. Worth every minute.",
+        "rating": 5,
+        "author": 1,
+        "film": 3,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 16,
+      "fields": {
+        "text": "A solid film with good moments but also some flaws.",
+        "rating": 3,
+        "author": 2,
+        "film": 4,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 17,
+      "fields": {
+        "text": "Not a fan. The story was too predictable and the characters lacked depth.",
+        "rating": 2,
+        "author": 1,
+        "film": 4,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 18,
+      "fields": {
+        "text": "The visuals were stunning, but the narrative was lacking.",
+        "rating": 3,
+        "author": 2,
+        "film": 4,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 19,
+      "fields": {
+        "text": "A decent film with some interesting moments, but overall forgettable.",
+        "rating": 3,
+        "author": 1,
+        "film": 4,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 20,
+      "fields": {
+        "text": "An enjoyable watch with a solid storyline. I recommend it.",
+        "rating": 4,
+        "author": 2,
+        "film": 4,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 21,
+      "fields": {
+        "text": "A thrilling ride with excellent performances. Highly recommended!",
+        "rating": 5,
+        "author": 1,
+        "film": 5,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 22,
+      "fields": {
+        "text": "Had high expectations but was let down by a weak plot.",
+        "rating": 2,
+        "author": 2,
+        "film": 5,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 23,
+      "fields": {
+        "text": "A visually stunning film but with a somewhat predictable story.",
+        "rating": 3,
+        "author": 1,
+        "film": 5,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 24,
+      "fields": {
+        "text": "Great cinematography and soundtrack, but the plot was lacking.",
+        "rating": 4,
+        "author": 2,
+        "film": 5,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 25,
+      "fields": {
+        "text": "A fantastic film with memorable characters and an engaging plot.",
+        "rating": 5,
+        "author": 1,
+        "film": 5,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 26,
+      "fields": {
+        "text": "A solid film with good moments but could use some improvement.",
+        "rating": 3,
+        "author": 2,
+        "film": 6,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 27,
+      "fields": {
+        "text": "Enjoyed the film, but the ending was a bit disappointing.",
+        "rating": 3,
+        "author": 1,
+        "film": 6,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 28,
+      "fields": {
+        "text": "A thrilling adventure with some excellent twists.",
+        "rating": 4,
+        "author": 2,
+        "film": 6,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 29,
+      "fields": {
+        "text": "The film had potential but didn't quite live up to it.",
+        "rating": 2,
+        "author": 1,
+        "film": 6,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 30,
+      "fields": {
+        "text": "An entertaining watch with some memorable scenes.",
+        "rating": 4,
+        "author": 2,
+        "film": 6,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 31,
+      "fields": {
+        "text": "A brilliant film with a fantastic storyline. Highly recommended!",
+        "rating": 5,
+        "author": 1,
+        "film": 7,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 32,
+      "fields": {
+        "text": "Had its moments, but overall it was a bit of a letdown.",
+        "rating": 2,
+        "author": 2,
+        "film": 7,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 33,
+      "fields": {
+        "text": "The film was entertaining, but it could have used more character development.",
+        "rating": 3,
+        "author": 1,
+        "film": 7,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 34,
+      "fields": {
+        "text": "An enjoyable film with a good plot but a few pacing issues.",
+        "rating": 4,
+        "author": 2,
+        "film": 7,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    },
+    {
+      "model": "films.review",
+      "pk": 35,
+      "fields": {
+        "text": "A must-watch for fans of the genre. Absolutely fantastic!",
+        "rating": 5,
+        "author": 1,
+        "film": 7,
+        "created_at": "2024-07-23T08:52:11.157Z",
+        "updated_at": "2024-07-23T08:52:11.157Z"
+      }
+    }
+]
