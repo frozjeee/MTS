@@ -9,13 +9,16 @@ class FilmAdmin(admin.ModelAdmin):
     ordering = ('title', )
     date_hierarchy = 'release_date'
 
-
     def display_genres(self, obj):
         return ", ".join([genre.name for genre in obj.genres.all()])
     display_genres.short_description = 'Genres'
 
 
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ('id', 'text')
+
+
 admin.site.register(Film, FilmAdmin)
 admin.site.register(Director)
 admin.site.register(Genre)
-admin.site.register(Review)
+admin.site.register(Review, ReviewAdmin)

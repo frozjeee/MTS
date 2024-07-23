@@ -6,13 +6,13 @@ from .models import Film, Genre, Director, Review
 class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
-        fields = ['name']
+        fields = ['id', 'name']
 
 
 class DirectorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Director
-        fields = ['name']
+        fields = ['id', 'name']
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -24,7 +24,7 @@ class UserSerializer(serializers.ModelSerializer):
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
-        fields = ['text', 'rating']
+        fields = ['id', 'text', 'rating']
 
 
 class FilmListSerializer(serializers.ModelSerializer):
@@ -34,7 +34,7 @@ class FilmListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Film
-        fields = ['title', 'genres', 'description', 'director', 'release_date', 'rating']
+        fields = ['id', 'title', 'genres', 'description', 'director', 'release_date', 'rating']
 
 
 class FilmDetailSerializer(FilmListSerializer):

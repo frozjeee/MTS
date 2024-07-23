@@ -1,8 +1,7 @@
 from django.db.models import Avg
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status
-from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView, ListCreateAPIView, CreateAPIView
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.generics import RetrieveUpdateDestroyAPIView, ListCreateAPIView, CreateAPIView
 from rest_framework.filters import OrderingFilter
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -15,15 +14,15 @@ from .serializers import FilmListSerializer, FilmDetailSerializer, ReviewSeriali
 
 class FilmListView(ListCreateAPIView):
     """
-    Show all films.
+    Show all films or create film.
 
     Items can be filtered by genre, rating,
     or can be ordered by release date.
     Release date is shown in a films list to see dates for filtering.
     """
     queryset = Film.objects.all()
-    serializer_class = FilmListSerializer
     filter_backends = [DjangoFilterBackend, OrderingFilter]
+    permission_classes = (IsAuthenticatedForWrite, )
     filterset_class = FilmFilter
     ordering_fields = ['release_date']
 
@@ -31,6 +30,12 @@ class FilmListView(ListCreateAPIView):
         queryset = super().get_queryset()
         queryset = queryset.annotate(rating=Avg('reviews__rating', default=0))
         return queryset
+    
+    def get_serializer_class(self):
+        if self.request.method == 'GET':
+            return FilmListSerializer
+        if self.request.method == 'POST':
+            return FilmDetailSerializer     
 
 
 class FilmDetailView(RetrieveUpdateDestroyAPIView):
