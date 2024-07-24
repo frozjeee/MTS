@@ -31,13 +31,10 @@ class Film(CreatedAtUpdatedAt):
     def __str__(self):
         return self.title
 
-
     class Meta:
         db_table = "film"
         verbose_name = _("Film")
         verbose_name_plural = _("Films")
-
-
 
 
 class Director(models.Model):
@@ -85,7 +82,6 @@ class Review(CreatedAtUpdatedAt):
 
     def __str__(self):
         return f'{self.text:30}'
-
 
     class Meta:
         db_table = "review"
